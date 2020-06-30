@@ -21,9 +21,7 @@ class SingUp extends Component {
     }
     handleSubmit = (e) => {
         if(this.state.password===this.state.password2){
-            console.log('rowne sa!')
             this.setState({information: null})
-            console.log(this.state)
             this.props.signUp(this.state)
         }
         else {

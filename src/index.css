@@ -4,9 +4,8 @@ body, html {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     /* background: url(/img/tlo.jpg); */
-    background-size: 100%;
-    background-position: bottom;
-    background-color: #95a5a6;
+ 
+
     margin:0;
 		padding:0;
 }

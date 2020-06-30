@@ -21,7 +21,6 @@ class Dashbord extends Component {
   
     render() {
     const { projects, auth, notyfications } = this.props;
-    console.log(this.props);
    
    
 
@@ -48,7 +47,6 @@ class Dashbord extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     projects: state.firestore.ordered.projects,
     auth: state.firebase.auth,
@@ -87,5 +85,5 @@ const StyledButton = styled.button`
     box-shadow: ${({click})=> click ? ' 0px 0px 8px -1px rgba(0,0,0,0.75)' : '0px 0px 8px -1px white'};
     :focus{
     background: white};
-}
+  }
 `

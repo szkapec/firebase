@@ -19,6 +19,5 @@ export const createProject = (project) => {
             dispatch({type: 'CREATE_PROJECT_ERROR', err})
         })
 
-        // console.log(dispatch({type: 'CREATE_PROJECT', project}))
     }
 }

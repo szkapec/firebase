@@ -24,7 +24,7 @@ class SingIn extends Component {
         const { authError, auth } = this.props;
         if(auth.uid) return <Redirect to="/"/>
         else return (
-            <div style={{backgroundColor: '#FBEADC', borderRadius: '20px' , boxShadow: '15px 16px 22px -11px rgba(0,0,0,0.75)'}} className="container">
+            <div style={{backgroundColor: '#FBEADC', borderRadius: '20px' , boxShadow: '0px 5px 15px -5px rgba(0,0,0,0.75)'}} className="container">
 
                 <form onSubmit={this.handleSubmit}>
                     <h5 className="grey-text text-darken-3">Zaloguj się</h5>

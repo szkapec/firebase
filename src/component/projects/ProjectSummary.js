@@ -4,8 +4,6 @@ import styled, {keyframes} from 'styled-components';
 
 
 const ProjectSummary = ({project, picture }) => {
-    console.log(project,'project')
-    console.log(picture)
     return (
         <>
         <StyledPositionRelative className="card z-depth-0 project-summary">
@@ -20,8 +18,8 @@ const ProjectSummary = ({project, picture }) => {
                         {project.content}
                     </div>
                     
-                    <StyledP className="grey-text">Posted by: {project.authorLastName&&project.authorLastName} {project.authorFirstName&&project.authorFirstName}</StyledP>
-                    <p className="grey-text">{moment(project.createdAt.toDate().toString()).calendar()}</p>
+                    <StyledP className="grey-text">Post: {project.authorLastName&&project.authorLastName} {project.authorFirstName&&project.authorFirstName}</StyledP>
+                    <p className="grey-text">Data: {moment(project.createdAt.toDate().toString()).calendar()}</p>
                 </div>
         </StyledPositionRelative>
         <div>
@@ -44,27 +42,12 @@ const StyledPositionRelative = styled.div`
     background-color: #FBEADC;
 
     
-    @media(min-width: 600px) {
-        margin: 20px 10px;
-        width: 50%;
-    }
-    @media(min-width:800px){
-        margin: 40px 40px;
-        width: 60%;
-    }
-    @media(min-width:1200px){
-        width: 700px;
-        margin: 50px 100px;
-    }
-    @media(min-width:1500px){
-        width: 900px;
-    }
-    
 `
 const StyledSpan = styled.span`
     position: absolute;
     top: 10px;
     right: 15px;
+    
 `
 const StyledSpan2 = styled.span`
     position: absolute;

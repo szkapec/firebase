@@ -1,13 +1,4 @@
-//https://github.com/Sv1nnet/mario-plan-migrated-on-redux601-and-firebase300-alpha/blob/after-migration/src/index.js
-// rules_version = '2';
-// service cloud.firestore {
-//   match /databases/{database}/documents {
 
-//     match /{document=**} {
-//       allow read, write: if request.time < timestamp.date(2020, 7, 17);
-//     }
-//   }
-// }
 
 import React from 'react';
 import ReactDOM from 'react-dom';
