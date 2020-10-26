@@ -32,9 +32,9 @@ class Dashbord extends Component {
                 <StyledButton click={this.state.changeClickNotification} onClick={this.changeClick}>Notyfikacje</StyledButton>
             </StyledContainerButton>
            
-          <div style={{position: 'relative'}} className="">
+          {/* <div style={{position: 'relative'}} className="">
             <Notifications notyfications={notyfications} clickNot={this.state.changeClickNotification}/>
-          </div>
+          </div> */}
           <div
             className="projectList">
             <div className="projectList--component">

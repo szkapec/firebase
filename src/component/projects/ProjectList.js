@@ -22,20 +22,15 @@ const ProjectList = ({project}) => {
 export default ProjectList;
 
 const StyledPositionRelative = styled.div`
-    position: relative;
-
-    
-    @media(min-width: 600px) {
-        width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px; 
+    @media(min-width: 850px) {
+        grid-template-columns: repeat(2, 1fr);
     }
-    @media(min-width:800px){
-        width: 60%;
+    @media(min-width: 1550px) {
+        grid-template-columns: repeat(3, 1fr);
     }
-    @media(min-width:1200px){
-        width: 700px;
-    }
-    @media(min-width:1500px){
-        width: 900px;
-    }
-    
 `
